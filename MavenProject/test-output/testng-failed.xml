@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [New Tours]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Booking Tickets(failed)">
+    <classes>
+      <class name="driver.DriverDemo">
+        <methods>
+          <include name="demoBfr"/>
+          <include name="demoAft"/>
+          <include name="demoTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- driver.DriverDemo -->
+    </classes>
+  </test> <!-- Booking Tickets(failed) -->
+</suite> <!-- Failed suite [New Tours] -->
